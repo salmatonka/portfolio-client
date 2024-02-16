@@ -1,0 +1,104 @@
+/* name-animation */
+.nameAnim-1{
+    animation: textOpacity 4s ease-in-out infinite;
+}
+.nameAnim-2{
+    animation: textOpacity 5s ease-in-out infinite;
+}
+.nameAnim-3{
+    animation: textOpacity 6s ease-in-out infinite;
+}
+.nameAnim-4{
+    animation: textOpacity 7s ease-in-out infinite;
+}
+.nameAnim-5{
+    animation: textOpacity 8s ease-in-out infinite;
+}
+
+@keyframes textOpacity {
+    0%{
+        opacity: 80%;
+    }
+    25%{
+        opacity: 80%;
+    }
+    50%{
+        opacity: 80%;
+    }
+    75%{
+        opacity: 80%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+/* homeBanner img  */
+
+.imgAnim{
+    animation: imgAnim 3s ease-in infinite;
+    
+}
+@keyframes imgAnim {
+    0%{
+        box-shadow: -2px 4px 18px black;
+        border: 3px solid black;
+    }
+    50%{
+        box-shadow: -2px 4px 18px white;
+        border: 3px solid white;
+      
+    }
+    75%{
+        box-shadow: -2px 4px 18px #66caf1;
+        border: 3px solid #66caf1;
+    }
+    100%{
+        box-shadow: -2px 4px 18px #00AB78;
+        border: 3px solid #00AB78;
+    }
+    
+}
+
+/* homeBtnAnimation */
+
+.home-btn-anim {
+    box-shadow: 0px 0px 15px #00AB78;
+    transition: all 0.2s;
+    animation: home-btn-bg 1.0s ease-in infinite ;
+}
+
+@keyframes home-btn-bg {
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0px 0px 15px #00AB78;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
+
+/* home link groups btn */
+
+.btnHover{
+    transition: all 0.2s;
+   
+}
+.btnHover:hover {
+    animation: btnHoverBg 1.0s ease-in infinite ;
+    box-shadow: 0px 0px 15px #00AB78;
+}
+
+@keyframes btnHoverBg {
+    0%{
+        box-shadow: none;
+    }
+    50%{
+        box-shadow: 0px 0px 15px #00AB78;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
