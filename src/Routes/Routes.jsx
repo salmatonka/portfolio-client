@@ -33,7 +33,7 @@ const routes = createBrowserRouter([
         {
             path:'/Projects/:id',
             element: <ProjectDetails />,
-            loader: async ({params}) => await fetch( `https://salma-portfolio-server-jade.vercel.app/projects/${params?.id}`),
+            loader: async ({params}) => await fetch( `https://rony-portfolio-8g0bnr4ao-salmatonka.vercel.app/projects/${params?.id}`),
         },
         {
             path:'/skills',
