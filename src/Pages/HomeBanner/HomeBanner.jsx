@@ -43,7 +43,7 @@ const HomeBanner = () => {
 
         </p>
         {/* <a href={resume} download={resume}> */}
-        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1D4b4ZZGyY0xBz5stwZWO3XMmtv6BNQjeBPxsFpk6jmc/edit#heading=h.gjdgxs">
+        <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1awZbOGka79DDzZq6NStVDENe_UPFDftn/edit?usp=sharing&ouid=105236247118606659868&rtpof=true&sd=true">
             <button className='home-btn-anim  btn  bg-emerald-500 hover:bg-emerald-900  hover:btn-outline mt-3 rounded-r-full w-84 md:w-44 capitalize gap-x-1 hover:text-gray-400'><HiDocumentText className="mr-2 text-2xl"></HiDocumentText><span >view Resume</span> </button>
         </a>
 

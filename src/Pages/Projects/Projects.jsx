@@ -8,7 +8,7 @@ const Projects = () => {
   useTitle('Projects')
   const [allProjects, setAllProjects] = useState([]);
   useEffect(() => {
-    fetch('https://rony-portfolio-8g0bnr4ao-salmatonka.vercel.app/projects')
+    fetch('https://portfolio-user-d34h.onrender.com/projects')
       .then(res => res.json())
       .then(data => setAllProjects(data))
   }, [])

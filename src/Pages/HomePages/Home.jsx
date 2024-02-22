@@ -5,12 +5,13 @@ import Projects from '../Projects/Projects'
 import Skills from '../Skills/Skills'
 import AboutUs from '../AboutUs/AboutUs'
 import ContactUs from '../ContactUs/ContactUs'
+import AutoMessage from '../../Shares/AutoMessage/AutoMessage'
 
 const Home = () => {
     useTitle('Home')
     return (
         <div>
-            {/* <AutoMessage /> */}
+            <AutoMessage />
             <HomeBanner />
             <Projects />
             <Skills />
