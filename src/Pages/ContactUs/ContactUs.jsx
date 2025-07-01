@@ -4,16 +4,15 @@ import './ContactUs.css';
 const ContactUs = () => {
     useTitle('Contact')
     return (
-        <div className='pt-24 pb-12 px-10 text-gray-400 '>
-            <div>
+        <div className='pt-24 pb-12 text-gray-400 '>
                 <div className='text-center'>
-                    <h2 className='text-4xl font-bold sm:text-3xl pb-5 '>Feel Free To <span className='text p-text '>Message</span></h2>
-                    <p className='text-2xl pb-6'>Do you have any question or query? Please message me
+                    <h2 className='lg:text-4xl font-bold text-2xl pb-5 '>Feel Free To <span className='text p-text '>Message</span></h2>
+                    <p className='lg:text-2xl text-xl lg:pb-6'>Do you have any question or query? Please message me
                         I will try to answer you. Thank you!</p>
                 </div>
 
-                <div className="container grid gap-6 mx-auto  lg:grid-cols-2 xl:grid-cols-5">
-                    <div className="w-full  py-16 rounded-md sm:px-12 md:px-16 xl:col-span-3 ">
+                <div className="grid gap-10 lg:grid-cols-2 xl:grid-cols-5">
+                    <div className="w-full py-16 rounded-md sm:px-4 xl:col-span-3 ">
 
                         <form action="https://formsubmit.co/e1cf56c3589647066652e2f545ac25c8" method="POST" className="self-stretch space-y-3 ng-untouched ng-pristine ng-valid">
                             <div data-aos="fade-right" >
@@ -42,7 +41,6 @@ const ContactUs = () => {
                 </div>
 
             </div>
-        </div>
     )
 }
 

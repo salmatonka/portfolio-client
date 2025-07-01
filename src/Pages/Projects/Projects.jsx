@@ -46,7 +46,7 @@ const Projects = () => {
     )
   }
   return (
-    <div className='pt-24 pb-20 px-14'>
+    <div className='pt-24 pb-20'>
 
       <div className='text-center text-gray-400'>
         <h2 className='text-4xl font-bold sm:text-3xl pb-5 '>M<span className='p-text '>yProjec</span>ts</h2>

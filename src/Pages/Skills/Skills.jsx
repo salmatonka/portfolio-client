@@ -89,7 +89,7 @@ const Skills = () => {
         }
     ]
     return (
-        <section className='text-gray-400 pt-24 pb-20  px-10'>
+        <section className='text-gray-400 pt-24 pb-20'>
             <div>
                 <div className='text-center'>
                     <h2 className='text-4xl font-bold sm:text-3xl pb-5 '>M<span className='text p-text '>ySkil</span>ls</h2>
@@ -100,7 +100,8 @@ const Skills = () => {
                 <div className='grid lg:grid-cols-7 md:grid-cols-3 sm:grid-cols-1  gap-6 p-6'>
                     {
                         allSkills.map(allSkill => <div key={allSkill.id}>
-                            <div data-aos="zoom-out-down" className="text-center text-gray-400 cardShadow">
+                            <div data-aos="zoom-out-down" className="text-center text-gray-400
+                             cardShadow">
                                 <div className="flex justify-center py-3">
                                     <img className='h-10 w-10 ' src={allSkill.icon} alt="" />
                                     <div>

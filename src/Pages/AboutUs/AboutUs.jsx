@@ -6,7 +6,7 @@ const AboutUs = () => {
     useTitle('AboutUs');
 
     return (
-        <div className='pt-24 pb-20 px-14 text-gray-400'>
+        <div className='pt-24 pb-20  text-gray-400'>
             <h2 className='text-4xl font-bold sm:text-3xl pt-5 pb-8  text-center '>A<span className='p-text'>bout</span>Us</h2>
 
             {/* AboutUs section */}

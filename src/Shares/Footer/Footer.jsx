@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='text-gray-400 bg-[#111827] '>
       <div data-aos="fade-up"
-        data-aos-duration="3000" className="footer footer-center py-8 ">
+        data-aos-duration="3000" className="footer footer-center py-10 ">
         <div>
           <img className="h-8 w-8 bg-emerald-500" src="https://swipekit.app/logo.png" alt="" />
           <h2 className="font-bold text-xl pb-1">

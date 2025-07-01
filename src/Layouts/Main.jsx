@@ -7,7 +7,9 @@ const Main = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div className='max-w-screen-xl lg:mx-auto px-6'>
+        <Outlet />
+      </div>
       <Footer />
     </div>
   )

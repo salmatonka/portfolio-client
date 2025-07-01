@@ -17,7 +17,7 @@ const ProjectDetails = () => {
 
     return (
 
-        <div className="projectDetailsContainer py-24 px-10 ">
+        <div className="projectDetailsContainer py-24">
             <div className="projectDetails mx-auto  sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <h2 className='text-4xl text-center text-gray-400 font-bold sm:text-3xl pt-8 pb-20'>pro<span className='p-text '>jectDeta</span>ils</h2>
             </div>
