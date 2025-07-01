@@ -33,7 +33,7 @@ const routes = createBrowserRouter([
         {
             path:'/Projects/:id',
             element: <ProjectDetails />,
-            loader: async ({params}) => await fetch( `https://portfolio-user-d34h.onrender.com/projects/${params?.id}`),
+            loader: async ({params}) => await fetch( `https://portfolio-server-ok9d.onrender.com/projects/${params?.id}`),
         },
         {
             path:'/skills',

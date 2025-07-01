@@ -3,14 +3,15 @@ import './ProjectCards.css';
 import { FaGithub, FaGlobe, FaRegStickyNote } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const ProjectCards = ({ allProject}) => {
-    const { _id,title,  image,clientLink,liveLink } = allProject;
+const ProjectCards = ({ project}) => {
+    const { _id,title,  image,clientLink,liveLink } = project;
     // console.log(project)
     return (
       <div data-aos="fade-up"
       data-aos-duration="3000">
         <div  style={{ border: '1px solid #00AB78' }} className=' rounded-xl p-6 project-card-shadow '>
-          <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl ">
+          <div className="relative overflow-hidden transition duration-300 transform rounded 
+          shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl ">
             <img
               className="6 w-full h-56 md:h-64 xl:h-80   "
               src={image}

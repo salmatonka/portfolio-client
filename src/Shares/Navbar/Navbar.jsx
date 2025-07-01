@@ -21,9 +21,7 @@ const navItems = <ScrollToTop  className={(isActive) => isActive ? 'active' : un
     <li className='text-gray-400 text-xl font-semibold '><NavLink to='/projects'>Projects</NavLink></li>
     <li className='text-gray-400 text-xl font-semibold '><NavLink to='/skills'>Skills</NavLink></li>
     <li className='text-gray-400 text-xl font-semibold '><NavLink to='/aboutUs' >About Us</NavLink></li>
-    <li className='text-gray-400 text-xl font-semibold '><NavLink to='/blog' >Blog</NavLink></li>
     <li className='text-gray-400 text-xl font-semibold '><NavLink to='/contactUs' >Contact Us</NavLink></li>
-    <li className='text-gray-400 text-xl font-semibold '><NavLink to='/allProjects' >All Projects</NavLink></li>
     
 </ScrollToTop>
 

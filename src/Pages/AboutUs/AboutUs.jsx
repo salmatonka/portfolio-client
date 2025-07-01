@@ -6,7 +6,7 @@ const AboutUs = () => {
     useTitle('AboutUs');
 
     return (
-        <div className='py-24 px-14 text-gray-400'>
+        <div className='pt-24 pb-20 px-14 text-gray-400'>
             <h2 className='text-4xl font-bold sm:text-3xl pt-5 pb-8  text-center '>A<span className='p-text'>bout</span>Us</h2>
 
             {/* AboutUs section */}
@@ -37,28 +37,28 @@ const AboutUs = () => {
                             <div data-aos="fade-up"
                                 data-aos-duration="3000" className='personal-shadow md:w-72  rounded-lg py-8  text-center '>
                                 <h2>
-                                    <span className='md:text-2xl sm:text-xl'>25+</span>
+                                    <span className='text-xl'>25+</span>
                                 </h2>
-                                <h2 className='md:text-2xl sm:text-xl'> Completed Projects </h2>
+                                <h2 className='text-xl'> Completed Projects </h2>
                             </div>
 
                             <div data-aos="fade-up"
                                 data-aos-duration="3000" className='personal-shadow md:w-72 sm:w-52 rounded-lg py-8  text-center'>
                                 <h2>
-                                    <span className='md:text-2xl sm:text-xl'>2+</span>
+                                    <span className='text-xl'>3+</span>
                                 </h2>
-                                <h2 className='md:text-2xl sm:text-xl'> years of experience</h2>
+                                <h2 className='text-xl'> years of experience</h2>
                             </div>
                         </div>
                     </div>
                     {/* personal-right-side */}
                     <div className=''>
-                        <h2 className='lg:text-3xl  font-bold sm:text-xl pb-4 '>PERSONAL INFORMATION</h2>
+                        <h2 className='lg:text-2xl  font-bold sm:text-xl  pb-3'>PERSONAL INFORMATION</h2>
                         <div className='personal-right-side md:flex justify-between '>
                             <div className=" font-semibold">
-                                <span className="text-gray-300 font-semibold ">Name: </span> Omme Salma <br />
+                                <span className="text-gray-300 font-semibold ">Name: </span> Salma Akter <br />
                                 <span className="text-gray-300 ">Address: </span> Narsingdi, bangladesh <br />
-                                <span className="text-gray-300 ">Email:</span> <span className='lowercase'>ommesalma858@gmail.com </span>
+                                <span className="text-gray-300 ">Email:</span> <span className='lowercase'>ommes918@gmail.com </span>
                             </div>
                             <div className=" font-semibold">
                                 <span className="text-gray-300">Phone:</span> (+88) 01930053708 <br />

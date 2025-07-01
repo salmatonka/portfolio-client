@@ -1,20 +1,52 @@
 import React from 'react';
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 // import { useLoaderData } from 'react-router-dom';
 import ProjectCards from '../ProjectCards/ProjectCards';
 import useTitle from '../../MyHook/useTitle';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { CircleLoader } from 'react-spinners';
+import { useQuery } from '@tanstack/react-query';
 
 const Projects = () => {
   useTitle('Projects')
-  const [allProjects, setAllProjects] = useState([]);
-  useEffect(() => {
-    fetch('https://portfolio-user-d34h.onrender.com/projects')
-      .then(res => res.json())
-      .then(data => setAllProjects(data))
-  }, [])
+  // const [projects, setProjects] = useState([]);
+  // useEffect(() => {
+  //   fetch('https://portfolio-server-ok9d.onrender.com/projects')
+  //     .then(res => res.json())
+  //     .then(data => setProjects(data))
+  // }, [])
 
+  const { data: projects = [], refetch, isLoading } = useQuery({
+    queryKey: ['projects'],
+    queryFn: async () => {
+      const res = await fetch('https://portfolio-server-ok9d.onrender.com/projects')
+      const data = await res.json()
+      return data;
+    }
+  })
+  // console.log(projects)
+
+  // // ....... pagination  ......
+  const [firstPage, setFirstPage] = useState(0);
+  const [lastPage, setLastPage] = useState(6);
+  const pages = [];
+  const pTitle = useLocation();
+  const navigate = useNavigate();
+
+  const numOfPage = Math.ceil(projects?.length / 6);
+  for (let i = 0; i < numOfPage; i++) {
+    pages?.push({ num: i + 1 })
+  }
+  refetch()
+  if (isLoading) {
+    return (
+      <div className="flex justify-center">
+        <CircleLoader />
+      </div>
+    )
+  }
   return (
-    <div className='py-24  px-14'>
+    <div className='pt-24 pb-20 px-14'>
 
       <div className='text-center text-gray-400'>
         <h2 className='text-4xl font-bold sm:text-3xl pb-5 '>M<span className='p-text '>yProjec</span>ts</h2>
@@ -23,14 +55,69 @@ const Projects = () => {
 
       </div>
 
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 '>
-        {
-          allProjects?.map(allProject => <ProjectCards
-            key={allProject?._id}
-            allProject={allProject}
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 '>
+        {/* {
+          projects?.map(project => <ProjectCards
+            key={project?._id}
+            project={project}
           ></ProjectCards>)
+        } */}
+
+        {
+          pTitle?.pathname === '/' ?
+            <>
+              {
+                projects?.slice(0, 3)?.map(project => <ProjectCards
+                  key={project?._id}
+                  project={project}
+                />)
+              }
+            </> : <>
+              {
+                projects?.slice(firstPage, lastPage)?.map(project => <ProjectCards
+                  key={project?._id}s
+                  project={project}
+                />)
+              }
+            </>
         }
       </div>
+
+      {/* ....... pagination start ......*/}
+
+      <div className={`${pTitle?.pathname === '/' ? 'hidden' : 'flex justify-center pt-12 pb-10'}`}>
+        <div className="flex gap-1">
+          {
+            pages?.map(({ num }) =>
+              <button
+                onClick={() => {
+                  setFirstPage(num * 6 - 6)
+                  setLastPage(6 * num)
+                }}
+                key={num}
+                className={`${firstPage / 6 + 1 === num ?
+                  'bg-emerald-500 text-gray-600 '
+                  :
+                  'border border-emerald-600'} rounded-md border-2 text-gray-400 py-1 px-3`}
+              >{num}</button>
+            )
+          }
+        </div>
+      </div>
+      {/* .......pagination end ..... */}
+
+      {
+        pTitle?.pathname === '/' &&
+        <div className="flex justify-center ">
+          <button 
+          style={{ border: '1px solid #00AB78' }}
+          onClick={() => navigate('/projects')}
+          className=" py-2 md:px-20 px-10 mt-12 rounded-md font-semibold text-gray-400 contactShadow"
+            
+          >View More</button>
+        </div>
+      }
+
     </div>
   )
 }

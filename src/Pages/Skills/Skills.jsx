@@ -89,7 +89,7 @@ const Skills = () => {
         }
     ]
     return (
-        <section className='text-gray-400 py-24  px-10'>
+        <section className='text-gray-400 pt-24 pb-20  px-10'>
             <div>
                 <div className='text-center'>
                     <h2 className='text-4xl font-bold sm:text-3xl pb-5 '>M<span className='text p-text '>ySkil</span>ls</h2>
