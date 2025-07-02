@@ -20,7 +20,7 @@ const Footer = () => {
 
             <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://github.com/salmatonka"> <FaGithub className='text-xl'></FaGithub> </a>
             <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.facebook.com/"> <FaFacebook className='text-xl'></FaFacebook> </a>
-            <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.linkedin.com/in/omme-salma-46708625b/?originalSubdomain=bd"> <FaLinkedin className='text-xl'></FaLinkedin> </a>
+            <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.linkedin.com/in/salma-akter-46708625b/"> <FaLinkedin className='text-xl'></FaLinkedin> </a>
              <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://discord.com/users/1074021076104925217"> <FaDiscord className='text-2xl' /></a>
           </div>
         </div>
