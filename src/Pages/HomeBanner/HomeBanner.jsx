@@ -51,7 +51,7 @@ const HomeBanner = () => {
         <div className='flex text-2xl text-gray-400 mt-7 justify-between md:justify-start'>
             <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://github.com/salmatonka"> <FaGithub ></FaGithub> </a>
             <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.facebook.com/"> <FaFacebook ></FaFacebook> </a>
-            <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.linkedin.com/in/omme-salma-46708625b/?originalSubdomain=bd"> <FaLinkedin ></FaLinkedin> </a>
+            <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.linkedin.com/in/salma-akter-46708625b/"> <FaLinkedin ></FaLinkedin> </a>
             <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="tel:+8801930053708"> <FaPhoneAlt ></FaPhoneAlt> </a>
             <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="mailto:ommes918@gmail.com"> <AiTwotoneMail ></AiTwotoneMail> </a>
             <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://discord.com/users/1074021076104925217"> <FaDiscord /></a>
