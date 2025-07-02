@@ -40,8 +40,11 @@ const Projects = () => {
   refetch()
   if (isLoading) {
     return (
-      <div className="flex justify-center">
-        <CircleLoader />
+      <div className="flex justify-center mt-4">
+        <CircleLoader
+        color={"#00AB78"}
+        size={50}
+        />
       </div>
     )
   }
