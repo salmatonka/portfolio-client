@@ -92,12 +92,12 @@ const Skills = () => {
         <section className='text-gray-400 pt-24 pb-20'>
             <div>
                 <div className='text-center'>
-                    <h2 className='text-4xl font-bold sm:text-3xl pb-5 '>M<span className='text p-text '>ySkil</span>ls</h2>
+                    <h2 className='lg:text-4xl text-2xl font-bold pb-5 '>M<span className='text p-text '>ySkil</span>ls</h2>
                     <p className='text-2xl pb-6'>Here is my skills to represent my Expertise</p>
                 </div>
 
 
-                <div className='grid lg:grid-cols-7 md:grid-cols-3 sm:grid-cols-1  gap-6 p-6'>
+                <div className='grid lg:grid-cols-7 md:grid-cols-3 sm:grid-cols-1  gap-4 py-8'>
                     {
                         allSkills.map(allSkill => <div key={allSkill.id}>
                             <div data-aos="zoom-out-down" className="text-center text-gray-400
@@ -105,7 +105,7 @@ const Skills = () => {
                                 <div className="flex justify-center py-3">
                                     <img className='h-10 w-10 ' src={allSkill.icon} alt="" />
                                     <div>
-                                        <h2 className="text-xl pl-2">{allSkill.title} </h2>
+                                        <h2 className="text-xl pl-2 mr-2">{allSkill.title} </h2>
                                     </div>
                                 </div>
                             </div>

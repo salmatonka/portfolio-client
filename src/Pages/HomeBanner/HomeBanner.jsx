@@ -9,7 +9,7 @@ import { FaDiscord } from "react-icons/fa6";
 
 const HomeBanner = () => {
   return (
-    <div className="md:flex py-14">
+    <div className="md:flex lg:pt-10 lg:pb-6">
     <div data-aos="fade-right" data-aos-duration="1500" className="px-20">
         <div className="avatar ">
             <div className="imgAnim animate-pulse ease-in-out  w-full md:w-96 rounded-full ">
@@ -23,9 +23,9 @@ const HomeBanner = () => {
         </div>
     </div>
     <div data-aos="fade-left" data-aos-duration="1500" className="flex-1 text-gray-400 px-5 md:px-0">
-        <h2 className="text-5xl uppercase font-bold"> <span>Hi !<br /> I am
+        <h2 className="lg:text-4xl text-2xl uppercase font-bold"> <span>Hi !<br /> I am
 
-            <span className=' text-emerald-500  md:text-6xl text-4xl '>
+            <span className='text-emerald-500 lg:text-4xl text-2xl'>
 
                 <span className=''> Salma  </span>
 
@@ -37,7 +37,7 @@ const HomeBanner = () => {
 
             </span>
 
-        </span> <br /><span className="text-4xl">web developer</span></h2>
+        </span> <br /><span className="lg:text-4xl text-2xl">web developer</span></h2>
         <p className="my-5 text-lg">
             I am a passionate full stack Web Developer. I have already created many Project with 1+ years <br /> of experience with modern technologies like React, Tailwind CSS, Node js, Mongo DB, Express JS, Bootstrap etc...
 
@@ -49,12 +49,12 @@ const HomeBanner = () => {
 
 
         <div className='flex text-2xl text-gray-400 mt-7 justify-between md:justify-start'>
-            <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://github.com/salmatonka"> <FaGithub ></FaGithub> </a>
-            <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.facebook.com/"> <FaFacebook ></FaFacebook> </a>
-            <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.linkedin.com/in/omme-salma-46708625b/?originalSubdomain=bd"> <FaLinkedin ></FaLinkedin> </a>
-            <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="tel:+8801930053708"> <FaPhoneAlt ></FaPhoneAlt> </a>
-            <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="mailto:ommes918@gmail.com"> <AiTwotoneMail ></AiTwotoneMail> </a>
-            <a className='btnHover p-2 mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://discord.com/users/1074021076104925217"> <FaDiscord /></a>
+            <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://github.com/salmatonka"> <FaGithub ></FaGithub> </a>
+            <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.facebook.com/"> <FaFacebook ></FaFacebook> </a>
+            <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://www.linkedin.com/in/omme-salma-46708625b/?originalSubdomain=bd"> <FaLinkedin ></FaLinkedin> </a>
+            <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="tel:+8801930053708"> <FaPhoneAlt ></FaPhoneAlt> </a>
+            <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="mailto:ommes918@gmail.com"> <AiTwotoneMail ></AiTwotoneMail> </a>
+            <a className='btnHover p-2 lg:mx-1 rounded-full hover:text-emerald-500' target='blank' href="https://discord.com/users/1074021076104925217"> <FaDiscord /></a>
 
         </div>
     </div>
