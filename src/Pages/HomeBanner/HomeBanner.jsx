@@ -4,7 +4,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { HiDocumentText } from 'react-icons/hi';
 import { FaFacebook, FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { AiTwotoneMail } from "react-icons/ai";
-import bannerImg from '../../assets/images/Snapchat-815282604.jpg';
+import bannerImg from '../../assets/images/profile2.png';
 import { FaDiscord } from "react-icons/fa6";
 
 const HomeBanner = () => {
